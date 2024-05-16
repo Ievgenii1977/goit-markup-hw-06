@@ -122,7 +122,6 @@ img {
     line-height: 0;
     position: absolute;
     border-radius: 100%;
-
     stroke-width: 1px;
     stroke: #2e2f42;
     top: 24px;
@@ -136,6 +135,7 @@ img {
     width: 24px;
     height: 24px;
     line-height: 0;
+    margin-left: 149px;
   }
   .mob-m-l-link {
     font-family: "Roboto", sans-serif;
@@ -153,6 +153,9 @@ img {
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-top: 40px;
+  }
+  .mob-m-cl {
+    fill: #2e2f42;
   }
   .mob-m-l {
     display: flex;
@@ -314,7 +317,291 @@ img {
   .menu-lin:focus {
     color: #404bbf;
   }
+  .logo:hover,
+  .logo:focus,
+  .color-w:hover,
+  .colst:focus,
+  .color-w:focus,
+  .colst:hover {
+    color: #404bbf;
+  }
 }
+
 /* ========header-desk===== */
 @media screen and (min-width: 1158px) {
+  .container-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-bottom: 1px solid #e7e9fc;
+    width: 1158px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .page-nave {
+    display: flex;
+    gap: 76px;
+    align-items: center;
+  }
+  .cont {
+    display: flex;
+    gap: 40px;
+  }
+  .menu-lin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .page-con {
+    font-style: normal;
+    display: flex;
+    margin-right: 0;
+  }
+}
+/* =========hero-mob======= */
+.page-back {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/HM6/Dark-bg-m.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-hg {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+  max-width: 496px;
+  margin: 0 auto 72px;
+}
+.container-hero {
+  text-align: center;
+}
+
+.page-but {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: #4d5ae5;
+  border-radius: 4px;
+  padding: 16px 32px;
+  border: none;
+  display: block;
+  min-width: 169px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.page-but:hover,
+.page-but:focus {
+  background: #404bbf;
+}
+/* =======backdrop===== */
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999999;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  visibility: hidden;
+}
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  min-height: 432px;
+  background: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 16px 24px 16px;
+}
+.but {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  right: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.but:hover,
+.but:focus {
+  background-color: #404bbf;
+  border: none;
+}
+.but-one {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.but:hover .but-one,
+.but:focus .but-one {
+  fill: #ffffff;
+}
+.leave {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+.page-form {
+  margin-bottom: 8px;
+}
+.lab {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  display: block;
+  margin-bottom: 4px;
+}
+.cl-in {
+  position: relative;
+}
+.in-n {
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  padding-left: 38px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+}
+
+.in-n:focus {
+  border-color: #4d5ae5;
+}
+.name-icon {
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  top: 50%;
+}
+.in-n:focus + .name-icon {
+  fill: #4d5ae5;
+}
+.user-name {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+}
+.page-com {
+  margin-bottom: 16px;
+}
+.texta {
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.texta:focus {
+  border-color: #4d5ae5;
+}
+.check {
+  margin-bottom: 24px;
+}
+
+.page-i {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+.clas-sp {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  cursor: pointer;
+}
+.prp {
+  line-height: 1.3;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+}
+.check:checked + .page-i .clas-sp {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+.but-s {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: auto;
+  margin-right: auto;
 }
