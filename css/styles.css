@@ -342,6 +342,7 @@ img {
   .cont {
     display: flex;
     gap: 40px;
+    padding-right: 0;
   }
   .menu-lin {
     font-family: "Roboto", sans-serif;
@@ -412,6 +413,15 @@ img {
 .page-but:hover,
 .page-but:focus {
   background: #404bbf;
+}
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+  .page-back {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/HM6/Dark-bg-m@2x.jpg);
+  }
 }
 /* =======backdrop-mob===== */
 .backdrop {
@@ -617,7 +627,15 @@ img {
     font-size: 56px;
     line-height: 1.1;
   }
-  /* ==========backdrop-tab======== */
+  @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .page-back {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/HM6/Dark-bg-t@2x.jpg);
+    }
+  } /* ==========backdrop-tab======== */
   .modal {
     width: 408px;
     min-height: 584px;
@@ -633,6 +651,15 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office.jpg);
+  }
+}
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .page-back {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/HM6/people-office-2x.jpg);
   }
 }
 /* ========advantages-mob======= */
@@ -655,8 +682,7 @@ img {
   width: 288px;
   height: 120px;
 }
-
-.page-text {
+.sec .page-text {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -664,12 +690,17 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
 }
+.section-pad {
+  margin-left: auto;
+  margin-right: auto;
+}
 .str-list {
   display: flex;
   flex-direction: column;
   margin-top: 96px;
   margin-bottom: 96px;
   gap: 72px;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .str-list-item {
@@ -876,13 +907,13 @@ img {
 }
 .port {
   display: flex;
-  padding-bottom: 24px;
+  margin-bottom: 96px;
   flex-direction: column;
   gap: 48px;
 }
 
 .text {
-  width: 360px;
+  width: 288px;
   height: 120px;
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
@@ -920,4 +951,234 @@ img {
 }
 .secb {
   background: #fff;
+}
+/* ======port-tab====== */
+@media screen and (min-width: 768px) {
+  .port {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 72px;
+
+    justify-content: center;
+  }
+  .port-page {
+    margin: 0;
+    width: 356px;
+    height: 420px;
+  }
+  .text {
+    padding: 32px 16px;
+    width: 356px;
+    height: 120px;
+  }
+}
+/* ======port-desk===== */
+@media screen and (min-width: 1158px) {
+  .port {
+    row-gap: 48px;
+  }
+  .port-page {
+    margin: 0;
+    width: 360px;
+    height: 420px;
+  }
+}
+/* ======footer-mob===== */
+.end {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  max-width: 264px;
+}
+
+.log-par {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 72px;
+}
+.text-media {
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+  justify-content: center;
+}
+.foot-back {
+  background: #2e2f42;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+.colst {
+  color: #f4f4fd;
+}
+.logo-f {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.page-soz {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.sozf {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sozf:hover,
+.sozf:focus {
+  background-color: #31d0aa;
+}
+.media {
+  margin-bottom: 72px;
+}
+.sub-p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+}
+
+.input-email {
+  width: 288px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+}
+.input-email::placeholder {
+  color: #ffffff;
+}
+.but-sub {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  border-radius: 4px;
+  margin-top: 16px;
+  min-width: 165px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sub-ic {
+  margin-left: 16px;
+  fill: #fff;
+}
+.sub-f {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 16px;
+
+  align-items: center;
+}
+/* ======footer-tab===== */
+@media screen and (min-width: 768px) {
+  .log-par {
+    align-items: baseline;
+    margin-left: 92px;
+  }
+  .page-sub {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-left: 92px;
+  }
+  .sub-p {
+    margin-left: 92px;
+    justify-content: flex-start;
+  }
+  .but-sub {
+    margin: 0;
+  }
+  .sub-f {
+    align-items: flex-start;
+  }
+  .media {
+    display: flex;
+    flex-direction: column;
+  }
+  .f-tab {
+    display: flex;
+    align-items: baseline;
+    gap: 24px;
+  }
+  .input-email {
+    width: 264px;
+  }
+  .text-media {
+    display: block;
+  }
+}
+/* ======footer-desk==== */
+@media screen and (min-width: 1158px) {
+  .container-f {
+    display: flex;
+    align-items: baseline;
+  }
+  .log-par {
+    display: flex;
+    margin-left: 0;
+  }
+
+  .end {
+    max-height: 72px;
+  }
+  .f-tab {
+    gap: 120px;
+  }
+  .foot-back {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .page-sub {
+    align-items: flex-start;
+    margin-left: 0;
+  }
+  .sub-p {
+    margin-left: 0;
+  }
+  .sub-f {
+    margin-left: 80px;
+  }
 }
