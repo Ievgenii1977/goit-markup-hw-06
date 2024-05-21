@@ -108,25 +108,16 @@ img {
   .mobile-menu.is-open {
     transform: translateX(0%);
   }
+  .page-con {
+    font-style: normal;
+  }
   .mob-cont {
     position: relative;
     padding-top: 72px;
     padding-bottom: 40px;
     margin: 0;
   }
-  .mob-m-c {
-    width: 24px;
-    height: 24px;
-    background: transparent;
-    padding: 0;
-    line-height: 0;
-    position: absolute;
-    border-radius: 100%;
-    stroke-width: 1px;
-    stroke: #2e2f42;
-    top: 24px;
-    right: 24px;
-  }
+
   .mob-bt {
     border: none;
     background: transparent;
@@ -183,7 +174,6 @@ img {
   .cont-c {
     margin-top: 168px;
     margin-left: 0;
-    margin-bottom: 48px;
   }
   .page-s.mob {
     display: flex;
@@ -191,7 +181,8 @@ img {
     align-items: center;
     padding-left: 0;
     gap: 40px;
-    padding-top: 48px;
+    margin-top: 48px;
+    margin-bottom: 40px;
   }
   .s-page {
     width: 40px;
@@ -304,6 +295,7 @@ img {
   .page-con {
     display: flex;
     padding-right: 0;
+    font-style: normal;
   }
   .menu-link-p:focus,
   .menu-link-p:hover,
@@ -386,7 +378,7 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  max-width: 496px;
+  max-width: 216px;
   margin: 0 auto 72px;
 }
 .container-hero {
@@ -626,6 +618,7 @@ img {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.1;
+    max-width: 496px;
   }
   @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
     .page-back {
@@ -671,17 +664,13 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  text-align: left;
-  margin-bottom: 8px;
+
+  margin: 0 auto 8px;
 }
 .icones-ant {
   display: none;
 }
-.str-list-item {
-  border: 1px solid #000;
-  width: 288px;
-  height: 120px;
-}
+
 .sec .page-text {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -693,12 +682,13 @@ img {
 .section-pad {
   margin-left: auto;
   margin-right: auto;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .str-list {
   display: flex;
   flex-direction: column;
-  margin-top: 96px;
-  margin-bottom: 96px;
+
   gap: 72px;
   align-items: center;
 }
@@ -769,7 +759,6 @@ img {
   color: #2e2f42;
   text-transform: capitalize;
   margin-bottom: 72px;
-  padding-top: 96px;
 }
 .page-t {
   background: #f4f4fd;
@@ -830,7 +819,6 @@ img {
   display: flex;
   flex-direction: column;
   gap: 72px;
-  padding-bottom: 96px;
 }
 
 .prof {
@@ -881,7 +869,6 @@ img {
   color: #2e2f42;
   text-transform: capitalize;
   margin-bottom: 72px;
-  margin-top: 96px;
 }
 .port-img {
   position: relative;
@@ -908,7 +895,7 @@ img {
 }
 .port {
   display: flex;
-  margin-bottom: 96px;
+
   flex-direction: column;
   gap: 48px;
 }
@@ -1117,16 +1104,16 @@ img {
 @media screen and (min-width: 768px) {
   .log-par {
     align-items: baseline;
-    margin-left: 92px;
+  }
+  .container-f {
+    width: 584px;
   }
   .page-sub {
     display: flex;
     gap: 24px;
     align-items: center;
-    margin-left: 92px;
   }
   .sub-p {
-    margin-left: 92px;
     justify-content: flex-start;
   }
   .but-sub {
@@ -1156,6 +1143,7 @@ img {
   .container-f {
     display: flex;
     align-items: baseline;
+    min-width: 1158px;
   }
   .log-par {
     display: flex;
