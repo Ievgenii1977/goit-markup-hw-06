@@ -838,9 +838,8 @@ img {
     flex-wrap: wrap;
     gap: 24px;
     row-gap: 64px;
-    margin-bottom: 96px;
+
     justify-content: center;
-    padding-bottom: 96px;
   }
   .back {
     margin: 0;
@@ -848,14 +847,10 @@ img {
 }
 /* ========team-desk==== */
 @media screen and (min-width: 1158px) {
-  .page-team {
-    padding-top: 120px;
-  }
   .page-t {
-    margin-top: 218px;
-  }
-  .bteam {
+    padding-top: 120px;
     padding-bottom: 120px;
+    margin-top: 106px;
   }
 }
 /* ========port-mob====== */
